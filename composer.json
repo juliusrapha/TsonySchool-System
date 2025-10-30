@@ -1,0 +1,29 @@
+{
+    "name": "juliusrapha/tsony",
+    "description": "Site para sistema de gerenciamento de estudantes para o centro de explicacao Tsony-English-School",
+    "require": {
+        "php": ">=7.0",
+        "twig/twig": "4.x-dev",
+        "pecee/simple-router": "dev-master",
+        "phpmailer/phpmailer": "dev-master"
+    },
+    "require-dev": {
+        "php": ">=7.0",
+        "twig/twig": "4.x-dev",
+        "pecee/simple-router": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/"
+        },
+        "files": [
+            "src/config.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Julius Rapha"
+        }
+    ],
+    "minimum-stability": "dev"
+}
