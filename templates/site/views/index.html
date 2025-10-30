@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Tsony School Team</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+<!-- Links para estilo do site -->
+	<link rel="stylesheet" href="{{ url('templates/site/views/css/bootstrap.min.css') }}">
+	<link rel="stylesheet" href="{{ url('templates/site/views/css/font-awesome.min.css') }}">
+	<link rel="stylesheet" href="{{ url('templates/site/views/css/animate.min.css') }}">
+	<link rel="stylesheet" href="{{ url('templates/site/views/css/et-line-font.css') }}">
+	<link rel="stylesheet" href="{{ url('templates/site/views/css/nivo-lightbox.css') }}">
+	<link rel="stylesheet" href="{{ url('templates/site/views/css/nivo_themes/default/default.css') }}">
+	<link rel="stylesheet" href="{{ url('templates/site/views/css/style.css') }}">
+	<link rel="stylesheet" href="{{ url('templates/site/views/css/loginModal.css') }}">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+<!-- preloader section -->
+<div class="preloader">
+	<div class="sk-spinner sk-spinner-circle">
+       <div class="sk-circle1 sk-circle"></div>
+       <div class="sk-circle2 sk-circle"></div>
+       <div class="sk-circle3 sk-circle"></div>
+       <div class="sk-circle4 sk-circle"></div>
+       <div class="sk-circle5 sk-circle"></div>
+       <div class="sk-circle6 sk-circle"></div>
+       <div class="sk-circle7 sk-circle"></div>
+       <div class="sk-circle8 sk-circle"></div>
+       <div class="sk-circle9 sk-circle"></div>
+       <div class="sk-circle10 sk-circle"></div>
+       <div class="sk-circle11 sk-circle"></div>
+       <div class="sk-circle12 sk-circle"></div>
+    </div>
+</div>
+
+<!-- navigation section -->
+<section class="navbar navbar-fixed-top custom-navbar" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand">Tsony School</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#home" class="smoothScroll">HOME</a></li>
+				<li><a href="#work" class="smoothScroll">SERVICOS</a></li>
+				<li><a href="#about" class="smoothScroll">SOBRE</a></li>
+				<li><a href="#portfolio" class="smoothScroll">CURSOS</a></li>
+				<li><a href="#pricing" class="smoothScroll">PRECOS</a></li>
+				<li><a href="#contact" class="smoothScroll">CONTACTE-NOS</a></li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<!-- home section -->
+<section id="home">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<h3>Desenvolvendo habilidades para um mundo em constante mudança.</h3>
+				<h1>TSONY SCHOOL</h1>
+				<hr>
+				<button class="smoothScroll btn btn-danger" onclick="openModal()">Conecte-se</button>
+				<a href="#contact" class="smoothScroll btn btn-default">Inscrever-se</a>
+			</div>
+		</div>
+	</div>		
+</section>
+
+<!-- ============================| Modal do Login |========================= -->
+<div class="modal" id="modal">
+	<div class="modal-content col-lg-9">
+		<div class="container">
+			<div class="col-lg-6">
+				<div class="p-5">
+					<div class="text-center m-1">
+						<h1 class="h4 text-gray-900 mb-2">Tsony School Admin</h1>
+					</div>
+
+					<form id="form-login" action="javascript:void(0);" method="POST">
+						<div class="form-group">
+							<input type="email" class="form-control p-3" id="useremail" name="useremail" placeholder="Introduza o endereco de email" required>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control p-5" name="userpassword" id="userpassword" placeholder="Password" required>
+						</div>
+						
+						<button type="submit" class="btn btn-info btn-user btn-block">
+							Login
+						</button>
+						
+					</form>
+					
+				</div>
+			</div>
+		</div>
+		<button class="close-btn" onclick="closeModal()">&times;</button>
+	</div>
+</div>
+
+<!-- ==============================| work section |========================== -->
+<section id="work">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<div class="section-title">
+					<strong>01</strong>
+					<h1 class="heading bold">NOSSOS SERVIÇOS</h1>
+					<hr>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+				<i class="fa fa-pencil fa-4x"></i>
+					<h3>ENSINO FUNDAMENTAL</h3>
+					<hr>
+					<p>
+						Organização dos alunos em ciclos (anos iniciais e finais) para melhor atender às suas necessidades específicas de desenvolvimento.
+					</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.9s">
+				<i class="fa fa-book fa-4x"></i>
+					<h3>ENSINO MÉDIO</h3>
+					<hr>
+					<p>Um centro educacional oferece ensino de qualidade, desde a educação infantil até o ensino médio, preparando os alunos para o futuro. </p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
+				<i class="fa fa-laptop fa-4x"></i>
+					<h3>CURSOS DE INFORMATICA</h3>
+					<hr>
+					<p>
+						Domine as ferramentas tecnológicas essenciais para o mercado de trabalho e para o dia a dia.
+						Oferecemos cursos desde o básico ao avançado em pacotes Office, programação e outros.
+					</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
+				<i class="fa fa-comments-o fa-4x"></i>
+					<h3>CURSOS DE IDIOMAS</h3>
+					<hr>
+					<p>
+						Aprenda um novo idioma de forma prática e dinâmica, com professores experientes e materiais atualizados.
+						Oferecemos cursos para todos os níveis, desde iniciantes até avançados, com foco na conversação e na imersão cultural.
+					</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
+				<i class="fa fa-graduation-cap fa-4x"></i>
+					<h3>PREPARACAO PARA EXAMES</h3>
+					<hr>
+					<p>
+						Prepare-se para os concursos públicos mais concorridos com nossos cursos preparatórios completos e atualizados.
+						Aumente suas chances de aprovação e conquiste a carreira dos seus sonhos.
+					</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
+				<i class="fa fa-tasks fa-4x"></i>
+					<h3>REFORCO ESCOLAR</h3>
+					<hr>
+					<p>
+						Supere as dificuldades de aprendizagem com aulas de reforço personalizadas e professores qualificados.
+						Oferecemos apoio em todas as disciplinas do ensino fundamental e médio, com foco nas suas necessidades individuais.	
+					</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- =========================| SECCAO SOBRE-NOS |======================= -->
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 text-center">
+				<div class="section-title">
+					<strong>02</strong>
+					<h1 class="heading bold">NOSSO CENTRO</h1>
+					<hr>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<img src="{{ url('templates/site/views/images/about-img.jpg') }}" class="img-responsive" alt="about img">
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<h3 class="bold">TSONY SCHOOL</h3>
+				<h1 class="heading bold">Qualidade eh a nossa prioridade</h1>
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li class="active"><a href="#design" aria-controls="design" role="tab" data-toggle="tab">HISTORIA</a></li>
+					<li><a href="#mobile" aria-controls="mobile" role="tab" data-toggle="tab">OBJETIVO</a></li>
+					<li><a href="#social" aria-controls="social" role="tab" data-toggle="tab">DIFERENCIAIS</a></li>
+				</ul>
+				<!-- tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="design">
+						<p>
+							O Centro Educacional TSONY nasceu do sonho de JULIUSDEV FOUNDATION em 2021, 
+							com a visão de criar um espaço de aprendizado inovador e acolhedor. Impulsionados pela paixão pela educação e pelo desejo de 
+							transformar vidas, os fundadores dedicaram-se a construir uma instituição que oferecesse ensino de excelência e oportunidades para todos. 
+						</p>
+						<p>
+							Desde o início, o centro priorizou o desenvolvimento integral dos alunos, investindo em uma equipe qualificada, infraestrutura moderna e metodologias de ensino inovadoras
+						</p>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="mobile">
+						<p>A TSONY SCHOOL tem como objetivo principal oferecer uma educação de excelência, que prepare os alunos para os desafios do futuro. Buscamos promover o desenvolvimento integral de cada estudante, cultivando não apenas o conhecimento acadêmico, mas também habilidades socioemocionais, pensamento crítico e valores éticos.</p>
+						<p>Nosso compromisso é com a formação de cidadãos conscientes, capazes de transformar a sociedade e construir um mundo melhor.</p>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="social">
+						<p>
+							Nossos diferenciais incluem a utilização de metodologias de ensino inovadoras, acompanhamento individualizado dos alunos e um ambiente escolar acolhedor e seguro.
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- team section -->
+<section id="team">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<div class="section-title">
+					<strong>03</strong>
+					<h1 class="heading bold">NOSSOS PROFESSORES</h1>
+					<hr>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="0.9s">
+				<div class="team-wrapper">
+					<img src="{{ url('templates/site/views/images/team1.jpg') }}" class="img-responsive" alt="team img">
+						<div class="team-des">
+							<h4>Carlos</h4>
+							<h3>Lic. em Ensino de Portugues</h3>
+							<hr>
+							<ul class="social-icon">
+								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+								<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.3s">
+				<div class="team-wrapper">
+					<img src="{{ url('templates/site/views/images/team2.jpg') }}" class="img-responsive" alt="team img">
+						<div class="team-des">
+							<h4>Julius</h4>
+							<h3>Lic. em Matematica</h3>
+							<hr>
+							<ul class="social-icon">
+								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+								<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.6s">
+				<div class="team-wrapper">
+					<img src="{{ url('templates/site/views/images/team3.jpg') }}" class="img-responsive" alt="team img">
+						<div class="team-des">
+							<h4>Castro</h4>
+							<h3>Lic. em Ingles & Frances</h3>
+							<hr>
+							<ul class="social-icon">
+								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+								<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.6s">
+				<div class="team-wrapper">
+					<img src="{{ url('templates/site/views/images/team4.jpg') }}" class="img-responsive" alt="team img">
+						<div class="team-des">
+							<h4>Julius</h4>
+							<h3>PhD em Informatica</h3>
+							<hr>
+							<ul class="social-icon">
+								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+								<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- portfolio section -->
+<div id="portfolio">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<div class="section-title">
+					<strong>04</strong>
+					<h1 class="heading bold">NOSSOS CURSOS</h1>
+					<hr>
+				</div>
+				<!-- ISO section -->
+				<div class="iso-section">
+					<ul class="filter-wrapper clearfix">
+                   		 <li><a href="#" data-filter="*" class="selected opc-main-bg">Todos</a></li>
+                   		 <li><a href="#" class="opc-main-bg" data-filter=".html">Ingles</a></li>
+                   		 <li><a href="#" class="opc-main-bg" data-filter=".photoshop">Frances</a></li>
+                    	 <li><a href="#" class="opc-main-bg" data-filter=".wordpress">Informatica</a></li>
+                    	 <li><a href="#" class="opc-main-bg" data-filter=".mobile">MS Office</a></li>
+               		</ul>
+               		<div class="iso-box-section wow fadeIn" data-wow-delay="0.9s">
+               			<div class="iso-box-wrapper col4-iso-box">
+
+               				 <div class="iso-box html wordpress mobile col-lg-4 col-md-4 col-sm-6">
+               				 	<a href="#" data-lightbox-gallery="portfolio-gallery"><img src="{{ url('templates/site/views/images/portfolio-img1.jpg') }}" alt="portfolio img"></a>
+               				 </div>
+
+               				 <div class="iso-box wordpress col-lg-4 col-md-4 col-sm-6">
+               				 	<a href="#" data-lightbox-gallery="portfolio-gallery"><img src="{{ url('templates/site/views/images/portfolio-img2.jpg') }}" alt="portfolio img"></a>
+               				 </div>
+
+               				 <div class="iso-box html mobile col-lg-4 col-md-4 col-sm-6">
+               				 	<a href="#" data-lightbox-gallery="portfolio-gallery"><img src="{{ url('templates/site/views/images/portfolio-img3.jpg') }}" alt="portfolio img"></a>
+               				 </div>
+
+               				 <div class="iso-box wordpress col-lg-4 col-md-4 col-sm-6">
+               				 	<a href="#" data-lightbox-gallery="portfolio-gallery"><img src="{{ url('templates/site/views/images/portfolio-img4.jpg') }}" alt="portfolio img"></a>
+               				 </div>
+
+               				 <div class="iso-box html photoshop col-lg-4 col-md-4 col-sm-6">
+               				 	<a href="#" data-lightbox-gallery="portfolio-gallery"><img src="{{ url('templates/site/views/images/portfolio-img5.jpg') }}" alt="portfolio img"></a>
+               				 </div>
+
+               				 <div class="iso-box photoshop col-lg-4 col-md-4 col-sm-6">
+               				 	<a href="#" data-lightbox-gallery="portfolio-gallery"><img src="{{ url('templates/site/views/images/portfolio-img6.jpg') }}" alt="portfolio img"></a>
+               				 </div>
+
+               			</div>
+               		</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>		
+
+<!-- pricing section -->
+<section id="pricing">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 text-center">
+				<div class="section-title">
+					<strong>05</strong>
+					<h1 class="heading bold">NOSSOS PRECOS</h1>
+					<hr>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="plan plan-one wow bounceIn" data-wow-delay="0.3s">
+					<div class="plan_title">
+						<i class="icon-mobile medium-icon"></i>
+						<h3>PACOTE ESSENCIAL</h3>
+						<h2>400MT <span>por mes</span></h2>
+					</div>
+					<ul>
+						<li>Para o ensino fundamental</li>
+                    	<li>Inscrição para o ano letivo</li>
+						<li>Acesso ao material didático básico</li>
+						<li>Acompanhamento individualizado</li>
+					</ul>
+					<button class="btn btn-warning">Obter agora</button>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="plan plan-two wow bounceIn" data-wow-delay="0.3s">
+					<div class="plan_title">
+						<i class="icon-desktop medium-icon"></i>
+						<h3>PACOTE INTERMEDIARIO</h3>
+						<h2>899MT <span>por mes</span></h2>
+					</div>
+					<ul>
+						<li>Todos os benefícios do Pacote Essencial</li>
+						<li>Aulas de reforço em disciplinas específicas</li>
+						<li>Desconto em cursos de idiomas e informática</li>
+                        <li>Preparatório para exames de nacionais</li>
+					</ul>
+					<button class="btn btn-warning">Obter este aqui</button>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="plan plan-three wow bounceIn" data-wow-delay="0.3s">
+					<div class="plan_title">
+						<i class="icon-cloud medium-icon"></i>
+						<h3>PACOTE PREMIUM</h3>
+						<h2>1500MT <span>por mes</span></h2>
+					</div>
+					<ul>
+						<li>Excelência Acadêmica</li>
+						<li>Acesso à plataforma online de aprendizagem</li>
+						<li>Aulas de idiomas ou informática inclusas</li>
+                        <li>Preparatório para exames de admissao</li>
+					</ul>
+					<button class="btn btn-warning">Comprar Agora</button>
+				</div>
+			</div>
+		</div>
+	</div>		
+</section>
+
+<!-- contact section -->
+<section id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 text-center">
+				<div class="section-title">
+					<strong>06</strong>
+					<h1 class="heading bold">CONTACTE NOS</h1>
+					<hr>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12 contact-info">
+				<h2 class="heading bold">INFORMACOES DE CONTATO</h2>
+				<p>Estamos à disposição para esclarecer suas dúvidas e fornecer mais informações. Entre em contato conosco por telefone, e-mail ou visite nossa unidade.</p>
+				<div class="col-md-6 col-sm-4">
+					<h3><i class="icon-envelope medium-icon wow bounceIn" data-wow-delay="0.6s"></i> EMAIL</h3>
+					<p>tsonyschool@gmail.com</p>
+				</div>
+				<div class="col-md-6 col-sm-4">
+					<h3><i class="icon-phone medium-icon wow bounceIn" data-wow-delay="0.6s"></i> PHONES</h3>
+					<p>+258 843805459 | +258 869664840</p>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<form id="form-contacto" action="javascript:void(0);" method="post" class="wow fadeInUp" data-wow-delay="0.6s">
+					<div class="col-md-6 col-sm-6">
+						<input type="text" class="form-control" placeholder="Nome" name="nome" id="nome"  required>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<input type="email" class="form-control" placeholder="Email" name="email" id="email" required>
+					</div>
+					<div class="col-md-12 col-sm-12">
+						<textarea class="form-control" placeholder="Mensagem" rows="7" name="mensagem" id="mensagem" required></textarea>
+					</div>
+					<div class="col-md-offset-4 col-md-8 col-sm-offset-4 col-sm-8">
+						<input type="submit" class="form-control" value="ENVIAR MENSAGEM">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- footer section -->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<p>Copyright © Digital Team HTML5 Template | Design: <a href="http://www.tooplate.com" target="_parent">Tooplate</a></p>
+				<hr>
+				<ul class="social-icon">
+					<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+					<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
+					<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fa fa-tumblr wow fadeIn" data-wow-delay="0.9s"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<script src="{{ url('templates/site/views/js/jquery.js') }}"></script>
+<script src="{{ url('templates/site/views/js/bootstrap.min.js') }}"></script>
+<script src="{{ url('templates/site/views/js/smoothscroll.js') }}"></script>
+<script src="{{ url('templates/site/views/js/isotope.js') }}"></script>
+<script src="{{ url('templates/site/views/js/nivo-lightbox.min.js') }}"></script>
+<script src="{{ url('templates/site/views/js/jquery.backstretch.min.js') }}"></script>
+<script src="{{ url('templates/site/views/js/wow.min.js') }}"></script>
+<script src="{{ url('templates/site/views/js/custom.js') }}"></script>
+<script src="{{ url('templates/site/views/js/contacteFeedback.js') }}"></script>
+<script src="{{ url('templates/site/views/js/loginModal.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+{% extends 'root.html' %}
+
+{% block conteudo %}
+
+<div id="formulario" class="card border-0 shadow-sm">
+
+    <div class="card-body">
+
+        <form action="" method="post">
+
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" name="nome" class="form-control" id="nome" aria-describedby="emailHelp">
+            </div>            
+
+            <div class="mb-3">
+                <label for="email" class="form-label">E-Mail</label>
+                <input type="text" name="email" class="form-control" id="email" aria-describedby="emailHelp">
+            </div>
+            
+            <div class="mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="password" name="senha" id="senha" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label for="senhaC" class="form-label">Confirmar Senha</label>
+                <input type="password" name="senha" id="senhaC" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label for="texto" class="form-label">Tipo de Usuario</label>
+                <select class="form-select" name="tipo">
+                    <option value="Professor">Professor</option>
+                    <option value="Estudante">Estudante</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Inscrever-se
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+{% endblock %}

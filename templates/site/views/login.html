@@ -1,0 +1,38 @@
+{% extends 'root.html' %}
+
+{% block conteudo %}
+<div id="formulario" class="card border-0 shadow-sm">
+
+    <div class="card-body">
+
+        <form action="{{ url('admin/dashboard') }}" method="post">
+
+            <div class="mb-3">
+                <label for="titulo" class="form-label">E-Mail</label>
+                <input type="text" name="email" class="form-control" id="titulo" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="texto" class="form-label">Senha</label>
+                <input type="password" name="senha" id="texto" class="form-control" rows="3">
+            </div>
+
+            <div class="mb-3">
+                <label for="texto" class="form-label">Tipo de Usuario</label>
+                <select class="form-select" name="tipo">
+                    <option value="Professor">Professor</option>
+                    <option value="Estudante">Estudante</option>
+                    <option value="CEO">CEO</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Conectar
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+{% endblock %}
